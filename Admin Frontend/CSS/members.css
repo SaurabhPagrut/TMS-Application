@@ -1,0 +1,26 @@
+.about{
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+.container > div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+.mem-img img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.mem-info{
+    padding: 10px;
+}
+.mem-info h4{
+    text-align: center;
+}
