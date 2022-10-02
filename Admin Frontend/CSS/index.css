@@ -21,29 +21,8 @@ body {
     background-color: yellow;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.nav-items{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-a{    
-    text-decoration: none;
-    color: black;
-}
-
-.nav-items a{
-    margin-right: 30px;
-}
-
-.login-container, .signup-container{
+.login-container,
+.signup-container {
     margin: auto;
     margin-top: 50px;
     width: 30%;
@@ -52,58 +31,74 @@ a{
     margin-bottom: 50px;
 }
 
-.login-container form, .signup-container form{
+.login-container form,
+.signup-container form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.login-container h1, .signup-container h1{
+.login-container h1,
+.signup-container h1 {
     text-align: center;
 }
 
-form input{
+form input {
     padding: 5px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     border: none;
     background-color: black;
-    color:white;
+    color: white;
 }
 
 @media (max-width: 1150px) {
-    .login-container, .signup-container{
+
+    .login-container,
+    .signup-container {
         width: 40%;
     }
-    nav{
+
+    nav {
         padding: 0px 15px;
     }
-    .nav-items a{
+
+    .nav-items a {
         margin-right: 20px;
         font-size: large;
     }
 }
+
 @media (max-width: 750px) {
-    .login-container, .signup-container{
+
+    .login-container,
+    .signup-container {
         width: 60%;
     }
-    .nav{
+
+    .nav {
         padding: 0px 10px;
     }
-    .nav-items a{
+
+    .nav-items a {
         margin-right: 10px;
         font-size: medium;
     }
 }
+
 @media (max-width: 400px) {
-    .login-container, .signup-container{
+
+    .login-container,
+    .signup-container {
         width: 80%;
     }
-    .nav{
+
+    .nav {
         padding: 0px 0px 0px 5px;
     }
-    .nav-items a{
+
+    .nav-items a {
         margin-right: 5px;
         font-size: small;
     }

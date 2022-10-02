@@ -21,10 +21,7 @@ body {
     background-color: yellow;
 }
 
-.about{
-    text-align: center;
-}
-.container {
-    margin: auto;
+.container{
     width: 80%;
+    margin: auto;
 }

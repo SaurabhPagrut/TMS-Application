@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 0.7vh;
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+}
+
+.about{
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+.container > div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+.mem-img img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.mem-info{
+    padding: 10px;
+}
+.mem-info h4{
+    text-align: center;
+}
