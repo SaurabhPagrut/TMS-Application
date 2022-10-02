@@ -67,6 +67,8 @@
 
 ```
 
+<!--
+
 ## AWS Deployed link
 
 ## API Root Endpoint
@@ -80,7 +82,6 @@
 ### Login Module
 
 - `POST //api/adminlogin` : Admin can login with mobile number and password provided at the time of registation
-<!--
 
 ### User Module
 
@@ -107,7 +108,7 @@
 - `GET /admin/listocustomers` : Get list of all the customers
 - `GET /admin/listodrivers` : Get list of all the drivers
 - `PUT /admin/update/{username}` : Updates admin detaisl by passed user name
-- `DELETE /admin/delete` : Deletes the admin with passed id -->
+- `DELETE /admin/delete` : Deletes the admin with passed id 
 
 ### Sample API Response for Admin Login
 
@@ -184,3 +185,4 @@
 <img src="https://github.com/shivamgarg796/Spring-work/blob/master/Images/Thank-you-word-cloud.jpg?raw=true" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage">
 
 ---
+-->
