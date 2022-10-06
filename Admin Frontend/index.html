@@ -8,39 +8,40 @@
     <title>TMS - Login</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <script src="./JavaScript/login.js" type="module"></script>
 </head>
 
 <body>
 
     <nav class="navbar">
-        <div class="logo">
-            <a href="./index.html">
-                <h2>TMS</h2>
-            </a>
-        </div>
 
-        <div class="nav-items">
-            <a href="./index.html">HOME</a>
-            <a href="./html/packages.html">PACKAGES</a>
-            <a href="./html/about.html">ABOUT</a>
-            <a href="./HTML/members.html">MEMBERS</a>
-        </div>
     </nav>
+
 
     <div class="login-container">
         <h1>
-            Login
+            Admin Login
         </h1>
 
-        <form>
-            <label id="userid">User Id : </label>
-            <input type="text" name="userid" placeholder="Enter User Id">
-            <label id="userpass">Password : </label>
-            <input type="text" name="userpass" placeholder="Enter Password">
-            <input type="submit" value="Login">
+        <form id="loginform">
+
+            <label id="adminMobile">Mobile : </label>
+            <input type="tel" id="mobile" name="adminMobile" pattern="[6-9]{1}[0-9]{5}[0-9]{4}" placeholder="Enter Mobile Number"
+                title="Enter 10 digit Mobile number starting with 6/7/8/9" required>
+
+            <label id="adminPassword">Password : </label>
+            <input type="string" id="password" name="adminPassword" placeholder="Enter Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+            <br>
+
+            <input type="submit" value="Login" style="cursor: pointer; padding: 10px;">
+
             <p>Don't Have an account?
                 <a href="./html/signup.html" style="color: blue;">SignUp</a>
             </p>
+
         </form>
     </div>
 
@@ -52,4 +53,3 @@
 </body>
 
 </html>
-<script src="./JavaScript/navbar.js" type="module"></script>

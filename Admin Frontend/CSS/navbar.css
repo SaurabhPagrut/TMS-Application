@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 0.8vh;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
