@@ -13,7 +13,6 @@ import com.masai.models.CurrentAdminSession;
 import com.masai.models.CurrentCustomerSession;
 import com.masai.repository.AdminDao;
 import com.masai.repository.AdminSessionDAO;
-import com.masai.repository.CustomerSessionDAO;
 
 @Service
 public class AdminLogInServiceImpl implements AdminLoginService{
@@ -22,10 +21,10 @@ public class AdminLogInServiceImpl implements AdminLoginService{
 	@Autowired  private AdminSessionDAO adminSessionDAO;
 
 	@Override
-	public String logIntoAccount(AdminDTO adminDTO) {
+	public CurrentAdminSession logIntoAccount(AdminDTO adminDTO) throws LoginException{
 		Optional<Admin> opt= adminDao.findByMobile(adminDTO.getMobile());
 		if(!opt.isPresent()) {
-			return "Please enter valid Mobile number!";
+		    throw new LoginException("Please enter valid Mobile number!");
 		}
 
 		Admin admin1= opt.get();
@@ -33,7 +32,7 @@ public class AdminLogInServiceImpl implements AdminLoginService{
 		Optional<CurrentAdminSession>  currAdminopt1= adminSessionDAO.findByAdminId(adminId);
 
 		if(currAdminopt1.isPresent()) {
-			return "Admin already logged in with this number.";
+		    throw new LoginException("Admin already logged in with this number.");
 		}
 
 		if(admin1.getPassword().equals(adminDTO.getPassword())) {
@@ -43,15 +42,15 @@ public class AdminLogInServiceImpl implements AdminLoginService{
 
 			adminSessionDAO.save(currentAdminSession);
 
-			return currentAdminSession.toString();
+			return currentAdminSession;
 		}
 		else {
-			return "Please Enter valid password.";
+		    throw new LoginException("Please Enter valid password.");
 		}
 	}
 
 	@Override
-	public String logOutAccount(String key) {
+	public String logOutAccount(String key) throws LoginException{
 		Optional<CurrentAdminSession> currAdminOpt=adminSessionDAO.findByUuid(key);
 
 		if(currAdminOpt.isPresent()) {
@@ -59,8 +58,9 @@ public class AdminLogInServiceImpl implements AdminLoginService{
 
 			adminSessionDAO.delete(currAdmin1);
 			return "Admin logged out successfully.";
+		}else {
+		    throw new LoginException("Admin does not exist, Enter correct uuid");
 		}
-		return "Admin does not exist, Enter correct uuid";
 	}
 
 	@Override

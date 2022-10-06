@@ -91,6 +91,12 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
 	}
 	
+	@ExceptionHandler(LoginException.class)
+    public ResponseEntity<MyErrorDetails> LoginExceptionHandler(LoginException exp, WebRequest req){
+        MyErrorDetails err = new MyErrorDetails(LocalDateTime.now(), exp.getMessage(), req.getDescription(false));
+        return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+    }
+	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<MyErrorDetails> validationException(MethodArgumentNotValidException me){
 		MyErrorDetails details = new MyErrorDetails();
