@@ -1,0 +1,67 @@
+#servicecont{
+    width: 80%;
+    margin: auto;
+}
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 20px;
+}
+
+.service>h2{
+    text-align: center;
+}
+
+.service>div{
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.service>div>button{
+    width: 125px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.searchBtn{
+    background-color: #5bccf8;
+    color: white;
+}
+
+.createBtn{
+    background-color: #32ce32;
+    color: white;
+}
+
+.deleteBtn{
+    background-color: red;
+    color: white;
+}
+
+.updateBtn{
+    background-color: orange;
+    color: white;
+}
+.cards{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

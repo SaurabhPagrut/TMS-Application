@@ -17,6 +17,9 @@
 
     </nav>
 
+    <div class="seperator">
+
+    </div>
 
     <div class="login-container">
         <h1>
@@ -26,11 +29,11 @@
         <form id="loginform">
 
             <label id="adminMobile">Mobile : </label>
-            <input type="tel" id="mobile" name="adminMobile" pattern="[6-9]{1}[0-9]{5}[0-9]{4}" placeholder="Enter Mobile Number"
-                title="Enter 10 digit Mobile number starting with 6/7/8/9" required>
+            <input type="tel" id="mobile" name="adminMobile" pattern="[6-9]{1}[0-9]{5}[0-9]{4}"
+                placeholder="Enter Mobile Number" title="Enter 10 digit Mobile number starting with 6/7/8/9" required>
 
             <label id="adminPassword">Password : </label>
-            <input type="string" id="password" name="adminPassword" placeholder="Enter Password"
+            <input type="password" id="password" name="adminPassword" placeholder="Enter Password"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required>

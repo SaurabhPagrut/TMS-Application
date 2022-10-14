@@ -1,11 +1,10 @@
 .login-container,
 .signup-container {
     margin: auto;
-    margin-top: 50px;
     width: 30%;
     padding: 20px 20px 30px 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .login-container form,
@@ -36,15 +35,6 @@ input[type="submit"] {
     .signup-container {
         width: 40%;
     }
-
-    nav {
-        padding: 0px 15px;
-    }
-
-    .nav-items a {
-        margin-right: 20px;
-        font-size: large;
-    }
 }
 
 @media (max-width: 750px) {
@@ -54,14 +44,6 @@ input[type="submit"] {
         width: 60%;
     }
 
-    .nav {
-        padding: 0px 10px;
-    }
-
-    .nav-items a {
-        margin-right: 10px;
-        font-size: medium;
-    }
 }
 
 @media (max-width: 400px) {
@@ -69,14 +51,5 @@ input[type="submit"] {
     .login-container,
     .signup-container {
         width: 80%;
-    }
-
-    .nav {
-        padding: 0px 0px 0px 5px;
-    }
-
-    .nav-items a {
-        margin-right: 5px;
-        font-size: small;
     }
 }

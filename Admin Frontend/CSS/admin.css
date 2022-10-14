@@ -1,0 +1,53 @@
+#servicecontainer {
+    width: 85%;
+    margin: auto;
+}
+
+#servicecontainer>h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.servicedivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.cards {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#updateForm {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 10px;
+}
+
+#submit {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 50%;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}

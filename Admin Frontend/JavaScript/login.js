@@ -1,6 +1,7 @@
 import { navbar1 } from "../Components/navbar.js";
 
 let nav1 = document.querySelector(".navbar");
+
 nav1.innerHTML = navbar1();
 
 let Loginf = document.getElementById("loginform");
@@ -25,7 +26,8 @@ const postLoginFetch = async () => {
     if (response.ok) {
         Loginf.reset();
         let res = await response.json();
-        alert("Login Successfully! Please Note This UUID "+res.uuid);
+        alert("Login Successfully! Please Note This UUID " + res.uuid);
+        localStorage.setItem("AdminLoggedIn", true);
         window.location = "./HTML/adminHome.html";
     } else {
         let res = await response.json();

@@ -1,14 +1,14 @@
 let aboutc = () => {
     return `
-    <h1 id="tms-application">TMS-Application</h1>
-    <h1 id="rest-api-for-an-online-trip-management-system">REST API for an Online Trip Management System</h1>
+    <h2 id="tms-application">TMS-Application</h2>
+    <h3 id="rest-api-for-an-online-trip-management-system">REST API for an Online Trip Management System</h3>
     <ul>
         <li>We have developed this Frontend Application for calling a REST API for an Online Trip Management System.
             This API performs all the fundamental CRUD operations of any Trip Management Application platform with
             user validation at every step.</li>
         <li>This project is developed by team of 5 Back-End Developers during project week in Masai School.</li>
     </ul>
-    <h2 id="tech-stack">Tech Stack</h2>
+    <h3 id="tech-stack">Tech Stack</h3>
     <ul>
         <li>Java</li>
         <li>Spring Framework</li>
@@ -23,7 +23,7 @@ let aboutc = () => {
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
-    <h2 id="modules">Modules</h2>
+    <h3 id="modules">Modules</h3>
     <ul>
         <li>Login, Logout Module</li>
         <li>User Module</li>
@@ -34,7 +34,7 @@ let aboutc = () => {
         <li>Trip Package Management Module</li>
         <li>Route Mangement Module</li>
     </ul>
-    <h2 id="features">Features</h2>
+    <h3 id="features">Features</h3>
     <ul>
         <li>User and Admin authentication &amp; validation with session uuid having.</li>
         <li>Admin Features:<ul>
@@ -55,7 +55,7 @@ let aboutc = () => {
             </ul>
         </li>
     </ul>
-    <h2 id="contributors">Contributors</h2>
+    <h3 id="contributors">Contributors</h3>
     <ul>
         <li><a href="https://github.com/TridipRong">@Tridip Rong</a></li>
         <li><a href="https://github.com/mrFarooque">@MD Farooque Ansari</a></li>
@@ -63,7 +63,7 @@ let aboutc = () => {
         <li><a href="https://github.com/SaurabhPagrut">@Saurabh Pragrut</a></li>
         <li><a href="https://github.com/efat56">@Efat Husneara</a></li>
     </ul>
-    <h2 id="installation-run">Installation &amp; Run</h2>
+    <h3 id="installation-run">Installation &amp; Run</h3>
     <ul>
         <li>Before running the API server, you should update the database config inside the <a
                 href="https://github.com/mrFarooque/rightful-order-9279/blob/main/TripManagementSystem/src/main/resources/application.properties">application.properties</a>
