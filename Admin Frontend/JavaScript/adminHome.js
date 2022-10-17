@@ -1,4 +1,3 @@
-let AdloginStatus = localStorage.getItem("AdminLoggedIn");
 let logoutFun = async () => {
     let uuid = prompt("Enter Session UUID");
     if (uuid.length > 0) {
@@ -19,10 +18,11 @@ let logoutFun = async () => {
         alert("Please Enter UUID!");
     }
 }
+
 let adUpdate = document.querySelector("#updateForm");
 let updateAdmin = async () => {
     event.preventDefault();
-    if (AdloginStatus == "true") {
+    if (localStorage.getItem("AdminLoggedIn") == "true") {
         let adUuid = document.getElementById("UUID").value;
         let adName = document.getElementById("adminName").value;
         let adEmail = document.getElementById("adminEmail").value;

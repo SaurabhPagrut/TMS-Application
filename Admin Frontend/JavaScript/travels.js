@@ -1,4 +1,9 @@
-import { navbar3 } from "../Components/navbar.js";
+import { navbar2, navbar21 } from "../Components/navbar.js";
 
-let nav3 = document.querySelector(".navbar");
-nav3.innerHTML = navbar3();
+let AdloginStatus = localStorage.getItem("AdminLoggedIn");
+let aboutnav = document.querySelector(".navbar");
+if (AdloginStatus == "true") {
+    aboutnav.innerHTML = navbar21();
+} else {
+    aboutnav.innerHTML = navbar2();
+}
